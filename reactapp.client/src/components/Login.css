@@ -1,0 +1,114 @@
+/* Background Styling */
+.background-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255,0,0,0.8), rgba(0,0,255,0.8)), url('/path-to-your-background-image.jpg') center/cover no-repeat;
+}
+
+/* Container for form and slider */
+.form-slider-container {
+    position: relative;
+    width: 400px;
+    max-height: 105vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    overflow: hidden;
+    height: 78vh;
+    top: -8vh;
+}
+
+/* Sliding functionality */
+.slider {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.login-active {
+    transform: translateX(0);
+}
+
+.register-active {
+    transform: translateX(-50%);
+}
+
+.form {
+    width: 50%;
+    padding: 15px; /* Reduce padding */
+    box-sizing: border-box;
+}
+
+/* Form elements */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .contact-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .contact-form input {
+        margin-bottom: 8px; /* Reduce margin */
+        padding: 8px; /* Reduce padding */
+        font-size: 14px; /* Slightly smaller font size */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* Scrollable form */
+.scrollable-form {
+    max-height: 350px; /* Set a smaller maximum height for the registration form */
+    //overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 10px; /* Add some space at the top */
+}
+
+/* Button styling */
+button {
+    padding: 8px; /* Reduce padding */
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    button:hover {
+        background-color: #e63e4a;
+    }
+
+/* Form toggle styling */
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+    .form-toggle span {
+        margin: 0 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+        .form-toggle span.active {
+            color: #ff4b5c;
+            text-decoration: underline;
+        }
+
+/* Messages */
+#msg {
+    margin-top: 10px;
+    color: #333;
+}
+
+.form.register-form::-webkit-scrollbar{
+    display:none;
+}

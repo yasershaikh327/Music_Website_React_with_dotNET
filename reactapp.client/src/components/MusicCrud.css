@@ -1,0 +1,71 @@
+.container {
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.add-music-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+    .add-music-form > * {
+        width: 94%;
+    }
+
+/* MusicCrud.css */
+
+/* Adjust the table for mobile devices */
+@media (max-width: 600px) {
+    .table-container {
+        overflow-x: auto; /* Add horizontal scroll */
+    }
+
+    .MuiTableCell-root {
+        min-width: 150px; /* Ensure minimum width for table cells */
+        padding: 10px; /* Increase padding for readability */
+    }
+
+        .MuiTableCell-root:first-child {
+            min-width: 200px; /* Increase width for the first column (Title) */
+        }
+}
+
+/* MusicCrud.css */
+
+/* Adjust the table for mobile devices */
+@media (max-width: 600px) {
+    .table-container {
+        overflow-x: auto; /* Horizontal scroll for smaller screens */
+    }
+
+    .MuiTableCell-root {
+        min-width: 150px;
+        padding: 10px;
+    }
+
+        .MuiTableCell-root:first-child {
+            min-width: 200px;
+        }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 8px; /* Add spacing between buttons */
+    }
+}
+
+/* Desktop styles */
+.action-buttons {
+    display: flex;
+    flex-direction: row; /* Align buttons horizontally for larger screens */
+    gap: 10px; /* Space between Edit and Delete buttons */
+}

@@ -1,0 +1,173 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.app {
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    height: 10vh;
+    z-index: 1;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    top: -3rem;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+/* Responsive styles for hamburger menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #282c34;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+        .nav-links.open {
+            display: flex;
+        }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+        nav ul li a {
+            font-size: 1.5em;
+        }
+}
+
+/* Homepage styling */
+.homepage {
+    background-image: url(/Images/HomepageImage1.jpg);
+    background-size: cover;
+    backdrop-filter: hue-rotate(45deg);
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact Us Form */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* About Us styling */
+.about {
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+    height: 100vh;
+}
+
+    .about h1 {
+        color: #282c34;
+    }
+
+
+h1#Logos {
+    font-size: x-large;
+    color:lawngreen;
+}
+
+
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+a:hover {
+    color: lawngreen;
+}
+
+h1#title1 {
+    color: lawngreen;
+    position: relative;
+    top: -5rem;
+    font-size: -webkit-xxx-large;
+}
+
+html::-webkit-scrollbar{
+    display:none;
+}
+
+

@@ -1,0 +1,100 @@
+/* Global styles */
+body {
+    background-image: url('../../Images/HomepageImage1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-container {
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-color: rgba(249, 249, 249, 0.9);
+    height: 72vh;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    max-width: 312px;
+    position: relative;
+    top: 5px;
+}
+
+    .contact-container:hover {
+        background-color: rgba(249, 249, 249, 1); /* Full opacity on hover */
+    }
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Darker label color for better readability */
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 14px; /* Increased padding for comfort */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+    input:focus, textarea:focus {
+        border-color: #282c34; /* Changes color on focus */
+        box-shadow: 0 0 5px rgba(40, 44, 52, 0.5); /* Subtle shadow on focus */
+    }
+
+textarea {
+    resize: none; /* Prevents resizing */
+    min-height: 150px;
+}
+
+button {
+    padding: 14px 24px; /* Increased button size for better touch targets */
+    background-color: #282c34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+    button:hover {
+        background-color: #555;
+        transform: scale(1.05); /* Slightly enlarges button on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    }
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input, textarea {
+        padding: 12px; /* Adjusted for mobile */
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px 18px; /* Adjusted for mobile */
+    }
+}

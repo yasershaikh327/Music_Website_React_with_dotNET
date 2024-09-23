@@ -1,0 +1,10 @@
+.homepage {
+    background-image: url('https://example.com/music-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
